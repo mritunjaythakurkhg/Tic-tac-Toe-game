@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=M+PLUS+1+Code:wght@300;700&family=Roboto:wght@400;700;900&display=swap");
+
+:root {
+  --red: #c0392b;
+  --background: #e74c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.gameContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.grid {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 100px);
+}
+.box {
+  border: 2px solid var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-color: var(--background);
+  cursor: pointer;
+}
+
+.boxText {
+  font-size: 2rem;
+}
+
+.infoContainer {
+  margin-left: 25px;
+}
+
+.imgBox img {
+  /* width: 100px; */
+  height: 0;
+  transition: height 2s ease-in-out;
+}
+.imgBox {
+  margin-top: 20px;
+}
+#reset {
+  padding: 5px 10px;
+  background-color: var(--red);
+  margin-top: 30px;
+  color: #fff;
+  cursor: pointer;
+}
